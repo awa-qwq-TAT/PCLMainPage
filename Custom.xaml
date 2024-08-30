@@ -1,0 +1,79 @@
+﻿<local:MyCard Title="Welcome" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
+	<StackPanel Margin="25,40,23,15">
+		<TextBlock TextWrapping="Wrap" Margin="0,0,0,1"
+	                Text="欢迎使用该主页" />
+		<TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="本项目已更新4次，最后更新日期：2024-8-30 12:25:36" />
+		<TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="你可以启动游戏或继续浏览该页面awa" />
+				<TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="下面是一些服务器" />
+	</StackPanel>
+</local:MyCard>
+<local:MyCard Title="PVP" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="1*" />
+				<ColumnDefinition Width="1*" />
+				<!-- 如果不打 *，则会占用固定的宽度，也可以写 Auto 来自适应 -->
+			</Grid.ColumnDefinitions>
+			<!-- 为按钮添加 Grid.Column 属性指定它所在的列，不要添加 Width 与 HorizontalAlignment 属性 -->
+			<local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35"
+                        Text="进入 Hypixel(1.8.9)" EventType="启动游戏" EventData="1.8.9|mc.hypixel.net" ToolTip="使用原版1.8.9进入 Hypixel" />
+            <local:MyButton Grid.Column="1" Margin="0,0,10,0" Height="35"
+                        Text="进入 CloverPixel(1.8.9)" EventType="启动游戏" EventData="1.8.9|cloverpixel.com" ToolTip="使用原版1.8.9进入 CloverPixel" />
+		</Grid>
+		</StackPanel>
+</local:MyCard>
+<local:MyCard Title="生存" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="1*" />
+				<!-- 如果不打 *，则会占用固定的宽度，也可以写 Auto 来自适应 -->
+			</Grid.ColumnDefinitions>
+			<!-- 为按钮添加 Grid.Column 属性指定它所在的列，不要添加 Width 与 HorizontalAlignment 属性 -->
+			<local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35"
+                        Text="进入 Meu(1.20.4)" EventType="启动游戏" EventData="1.20.4|mcmeu.com" ToolTip="使用原版1.20.4进入 Meu" />
+		</Grid>
+		</StackPanel>
+</local:MyCard>
+<local:MyCard Title="更多" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+			<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="1*" />
+				<ColumnDefinition Width="1*" />
+				<ColumnDefinition Width="1*" />
+				<!-- 第二个按钮的宽度是第一个按钮的 1.6 倍，且至少为 200 -->
+				<ColumnDefinition Width="150" />
+				<!-- 如果不打 *，则会占用固定的宽度，也可以写 Auto 来自适应 -->
+			</Grid.ColumnDefinitions>
+			<!-- 为按钮添加 Grid.Column 属性指定它所在的列，不要添加 Width 与 HorizontalAlignment 属性 -->
+			<local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35"
+                        Text="刷新主页" EventType="刷新主页"  />
+			<local:MyButton Grid.Column="1" Margin="0,0,10,0" Height="35"
+                        Text="今日人品" EventType="今日人品" />
+			<local:MyButton Grid.Column="2" Margin="0,0,10,0" Height="35"
+                        Text="内存优化" EventType="内存优化" />
+		</Grid>
+	</StackPanel>
+</local:MyCard>
+<local:MyCard Title="关于作者" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+		<TextBlock TextWrapping="Wrap" Margin="0,0,0,1"
+	                Text="我叫awa__qwq，一个初中牲" />
+		<TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="平时没事写写代码" />
+		<TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="这个主页就是这样出来的(小声)" />
+		<TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="有兴趣的可以去逛逛我的网站" />
+					<TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="话说写这么久HTML从来没有写出过这么多bug(划掉)" />
+<local:MyListItem  Margin="-5,2,-5,8"
+		            Logo="" Title="我的网站" Info="MY WEBSITE"
+		            EventType="打开网页" EventData="https://jublog.rth1.xyz/" Type="Clickable" />
+			</StackPanel>
+</local:MyCard>
